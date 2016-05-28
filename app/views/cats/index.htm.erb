@@ -1,0 +1,16 @@
+<h1>Listing articles</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @cats.each do |cat| %>
+    <tr>
+      <td><%= cat.title %></td>
+      <td><%= cat.text %></td>
+      <td><%= link_to 'Show', cat_path(cat) %></td>
+    </tr>
+  <% end %>
+</table>
