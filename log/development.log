@@ -3111,3 +3111,426 @@ Processing by CatsController#show as HTML
   [1m[36mCat Load (0.3ms)[0m  [1mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = ? LIMIT 1[0m  [["id", 4]]
   Rendered cats/show.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 95ms (Views: 93.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2016-05-29 10:13:29 +0400
+Processing by CatsController#new as HTML
+  Rendered cats/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/gromhs/Documents/kitty/app/views/cats/new.html.erb:1: syntax error, unexpected ','
+...rm_for :cat, url: cats_path do, multipart: true |f| );@outpu...
+...                               ^
+/Users/gromhs/Documents/kitty/app/views/cats/new.html.erb:1: syntax error, unexpected ')'
+..._path do, multipart: true |f| );@output_buffer.safe_append='
+...                               ^
+/Users/gromhs/Documents/kitty/app/views/cats/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/gromhs/Documents/kitty/app/views/cats/new.html.erb:23: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/cats/new.html.erb:1: syntax error, unexpected ','
+  app/views/cats/new.html.erb:1: syntax error, unexpected ')'
+  app/views/cats/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/cats/new.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.3ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (178.4ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (197.2ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (444.8ms)
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2016-05-29 10:14:12 +0400
+Processing by CatsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cats/new.html.erb within layouts/application (201.8ms)
+Completed 200 OK in 343ms (Views: 342.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 10:14:12 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 10:14:12 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 10:14:12 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 10:14:13 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-29 10:14:13 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-29 10:14:13 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-29 10:14:13 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 10:14:13 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-29 10:14:13 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 10:14:13 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 10:14:13 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 10:14:13 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-29 10:14:13 +0400
+
+
+Started POST "/cats" for 127.0.0.1 at 2016-05-29 10:15:55 +0400
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GI/MfT0ntQEw2CTHPsueYmq8x6VT6451Ucr8RVvyzj+tYpp++3iE4RkaFC0kOgYsuADCeA6ofQmpeZhPFrzrpQ==", "cat"=>{"name"=>"t", "text"=>"g", "picture"=>#<ActionDispatch::Http::UploadedFile:0x14baea0 @tempfile=#<Tempfile:/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/RackMultipart20160529-4462-1g3n0x2.png>, @original_filename="kitty1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"cat[picture]\"; filename=\"kitty1.png\"\r\nContent-Type: image/png\r\n">, "user_id"=>"1"}, "commit"=>"Save Cat"}
+Unpermitted parameter: picture
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cats" ("name", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "t"], ["text", "g"], ["user_id", 1], ["created_at", "2016-05-29 06:15:55.229509"], ["updated_at", "2016-05-29 06:15:55.229509"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cats/5
+Completed 302 Found in 11ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/cats/5" for 127.0.0.1 at 2016-05-29 10:15:55 +0400
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCat Load (0.2ms)[0m  SELECT  "cats".* FROM "cats" WHERE "cats"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered cats/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCats (20160528164010)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  DROP TABLE "cats"
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160528164010"]]
+  [1m[35m (6.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCats (20160528164010)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "cats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "text" text, "user_id" integer, "image" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_cats_on_user_id" ON "cats" ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160528164010"]]
+  [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cats_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cats_on_user_id' AND type='index'
+[0m
+
+
+Started POST "/cats" for 127.0.0.1 at 2016-05-29 10:20:02 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GI/MfT0ntQEw2CTHPsueYmq8x6VT6451Ucr8RVvyzj+tYpp++3iE4RkaFC0kOgYsuADCeA6ofQmpeZhPFrzrpQ==", "cat"=>{"name"=>"twdf", "text"=>"g123", "picture"=>#<ActionDispatch::Http::UploadedFile:0x14c2100 @tempfile=#<Tempfile:/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/RackMultipart20160529-4462-1yae76p.png>, @original_filename="kitty1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"cat[picture]\"; filename=\"kitty1.png\"\r\nContent-Type: image/png\r\n">, "user_id"=>"1"}, "commit"=>"Save Cat"}
+Unpermitted parameter: picture
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "cats" ("name", "text", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "twdf"], ["text", "g123"], ["user_id", 1], ["created_at", "2016-05-29 06:20:02.997425"], ["updated_at", "2016-05-29 06:20:02.997425"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/cats/1
+Completed 302 Found in 27ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/cats/1" for 127.0.0.1 at 2016-05-29 10:20:03 +0400
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.3ms)[0m  [1mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cats/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2016-05-29 10:21:19 +0400
+Processing by CatsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cats/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 137ms (Views: 135.5ms | ActiveRecord: 0.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCats (20160528164010)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  DROP TABLE "cats"
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160528164010"]]
+  [1m[35m (50.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCats (20160528164010)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "cats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "text" text, "user_id" integer, "picture" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_cats_on_user_id" ON "cats" ("user_id")[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160528164010"]]
+  [1m[36m (279.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cats_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cats_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2016-05-29 10:22:16 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CatsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cats/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 74ms (Views: 72.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/cats" for 127.0.0.1 at 2016-05-29 10:22:24 +0400
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hrWhK+sqk5VQBuVLTSkaVaUdvDJ+CGoNA9685qulIeUzWPcoLXWidXnE1aFX2IIbd6G57yNLmXH7bdjs5usEfw==", "cat"=>{"name"=>"lwekj", "text"=>"lll", "picture"=>#<ActionDispatch::Http::UploadedFile:0x11f916c @tempfile=#<Tempfile:/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/RackMultipart20160529-4462-qrk8x.png>, @original_filename="kitty1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"cat[picture]\"; filename=\"kitty1.png\"\r\nContent-Type: image/png\r\n">, "user_id"=>"1"}, "commit"=>"Save Cat"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `encoding' for #<ActionDispatch::Http::UploadedFile:0x11f916c>):
+  app/controllers/cats_controller.rb:14:in `create'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.3ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (175.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (143.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (317.8ms)
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2016-05-29 10:26:30 +0400
+Processing by CatsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cats/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 75ms (Views: 72.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/cats" for 127.0.0.1 at 2016-05-29 10:26:39 +0400
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"deHBDigIL/jpqlWv5w4XsPzwcbFy4llDjufwJ1r/6rHADJcN7lceGMBoZUX9/4/+Lkx0bC+hqj92VJQtF7HPKw==", "cat"=>{"name"=>"sdf", "text"=>"sdfsdf", "picture"=>#<ActionDispatch::Http::UploadedFile:0x11db090 @tempfile=#<Tempfile:/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/RackMultipart20160529-4462-1gum64e.png>, @original_filename="kitty1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"cat[picture]\"; filename=\"kitty1.png\"\r\nContent-Type: image/png\r\n">, "user_id"=>"1"}, "commit"=>"Save Cat"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `encoding' for #<ActionDispatch::Http::UploadedFile:0x11db090>):
+  app/controllers/cats_controller.rb:14:in `create'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (166.5ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (142.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (323.9ms)
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2016-05-29 10:27:29 +0400
+Processing by CatsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cats/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2016-05-29 12:08:39 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CatsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cats/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 531ms (Views: 529.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/cats" for 127.0.0.1 at 2016-05-29 12:08:47 +0400
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DFfTBmHLjumSN3Ot2CqrwwddRF/WU+JgD36P+mvn3+i5uoUFp5S/Cbv1Q0fC2zON1eFBgosQERz3zevwJqn6cg==", "cat"=>{"name"=>"sdf", "text"=>"sdf", "picture"=>#<ActionDispatch::Http::UploadedFile:0x165f148 @tempfile=#<Tempfile:/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/RackMultipart20160529-4462-16vkeam.png>, @original_filename="kitty2.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"cat[picture]\"; filename=\"kitty2.png\"\r\nContent-Type: image/png\r\n">, "user_id"=>"1"}, "commit"=>"Save Cat"}
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x5413480>):
+  app/models/cat.rb:4:in `<class:Cat>'
+  app/models/cat.rb:1:in `<top (required)>'
+  app/controllers/cats_controller.rb:14:in `create'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (183.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (371.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (173.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (807.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCats (20160528164010)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (32.6ms)[0m  DROP TABLE "cats"
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160528164010"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCats (20160528164010)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "cats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "text" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_cats_on_user_id" ON "cats" ("user_id")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160528164010"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cats_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cats_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2016-05-29 12:09:35 +0400
+Processing by CatsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cats/new.html.erb within layouts/application (54.5ms)
+Completed 200 OK in 195ms (Views: 173.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/cats" for 127.0.0.1 at 2016-05-29 12:09:42 +0400
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DdDuLZH30o4jksjoM/QYGN5GTgXXelCz4+TCB2JwGe24PbguV6jjbgpQ+AIpBYBWDPpL2Io5o88bV6YNLz48dw==", "cat"=>{"name"=>"sdf", "text"=>"32", "picture"=>#<ActionDispatch::Http::UploadedFile:0x79bc3a8 @tempfile=#<Tempfile:/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/RackMultipart20160529-4462-krjmnj.png>, @original_filename="kitty1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"cat[picture]\"; filename=\"kitty1.png\"\r\nContent-Type: image/png\r\n">, "user_id"=>"1"}, "commit"=>"Save Cat"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x17dde70>):
+  app/models/cat.rb:4:in `<class:Cat>'
+  app/models/cat.rb:1:in `<top (required)>'
+  app/controllers/cats_controller.rb:14:in `create'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.0ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (163.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (144.1ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (354.3ms)
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2016-05-29 12:13:13 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CatsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cats/new.html.erb within layouts/application (250.7ms)
+Completed 200 OK in 1348ms (Views: 1205.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/cats" for 127.0.0.1 at 2016-05-29 12:13:24 +0400
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yLAcV0QRH13jfsIetSzMr3q8h+NNT3fs2VIJsbFRxg19XUpUgk4uvcq88vSv3VThqACCPhAMhJAh4W27/B/jlw==", "cat"=>{"name"=>"sdf", "text"=>"123", "picture"=>#<ActionDispatch::Http::UploadedFile:0xb7e864 @tempfile=#<Tempfile:/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/RackMultipart20160529-63887-e9b32t.png>, @original_filename="kitty2.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"cat[picture]\"; filename=\"kitty2.png\"\r\nContent-Type: image/png\r\n">, "user_id"=>"1"}, "commit"=>"Save Cat"}
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.3ms)
+
+Paperclip::Error (Cat model missing required attr_accessor for 'picture_file_name'):
+  app/controllers/cats_controller.rb:14:in `create'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.4ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (176.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (144.4ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (395.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCats (20160528164010)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (46.1ms)[0m  DROP TABLE "cats"
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160528164010"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCats (20160528164010)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "cats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "text" text, "user_id" integer, "picture_file_name" varchar, "picture_content_type" varchar, "picture_file_size" integer, "picture_updated_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_cats_on_user_id" ON "cats" ("user_id")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160528164010"]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cats_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cats_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2016-05-29 12:20:38 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CatsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cats/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/cats" for 127.0.0.1 at 2016-05-29 12:20:46 +0400
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TBo990d1PP+xPWknS/O+P7n16R1QfrBVV3HqxYUq0tj592v0gSoNH5j/Wc1RAiZxa0nswA09Qymvwo7PyGT3Qg==", "cat"=>{"name"=>"sdf", "text"=>"sdfdsf", "picture"=>#<ActionDispatch::Http::UploadedFile:0x5a16224 @tempfile=#<Tempfile:/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/RackMultipart20160529-63887-fb52ak.png>, @original_filename="kitty1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"cat[picture]\"; filename=\"kitty1.png\"\r\nContent-Type: image/png\r\n">, "user_id"=>"1"}, "commit"=>"Save Cat"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/97dccf2ef7a4f1d1886c3ae76be45d4020160529-63887-kauukt.png'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/97dccf2ef7a4f1d1886c3ae76be45d4020160529-63887-1iok16s.png[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/97dccf2ef7a4f1d1886c3ae76be45d4020160529-63887-1iok16s.png[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/97dccf2ef7a4f1d1886c3ae76be45d4020160529-63887-1iok16s.png[0]' -auto-orient -resize "300x300>" '/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/65fe40111cac39325606babfafeda3fe20160529-63887-6seav'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/97dccf2ef7a4f1d1886c3ae76be45d4020160529-63887-1iok16s.png[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/97dccf2ef7a4f1d1886c3ae76be45d4020160529-63887-1iok16s.png[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/97dccf2ef7a4f1d1886c3ae76be45d4020160529-63887-1iok16s.png[0]' -auto-orient -resize "100x100>" '/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/65fe40111cac39325606babfafeda3fe20160529-63887-40nvd5'
+  [1m[36m (1.4ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/t2/t202IMToFRGhn3ZI18HbKk+++TM/-Tmp-/97dccf2ef7a4f1d1886c3ae76be45d4020160529-63887-1uo2ksa.png'
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "cats" ("name", "text", "user_id", "picture_file_name", "picture_content_type", "picture_file_size", "picture_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "sdf"], ["text", "sdfdsf"], ["user_id", 1], ["picture_file_name", "kitty1.png"], ["picture_content_type", "image/png"], ["picture_file_size", 4798], ["picture_updated_at", "2016-05-29 08:20:46.286009"], ["created_at", "2016-05-29 08:20:47.350579"], ["updated_at", "2016-05-29 08:20:47.350579"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cats/1
+Completed 302 Found in 1156ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/cats/1" for 127.0.0.1 at 2016-05-29 12:20:47 +0400
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCat Load (0.5ms)[0m  SELECT  "cats".* FROM "cats" WHERE "cats"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cats/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 79ms (Views: 75.1ms | ActiveRecord: 0.5ms)
