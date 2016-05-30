@@ -46,3 +46,4 @@ group :development do
 end
 
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem 'like', '0.2.1'
