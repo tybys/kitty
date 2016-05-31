@@ -8193,3 +8193,1293 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-30 00:31:16 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:09:12 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (53.3ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (130.7ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (1085.9ms)
+Completed 200 OK in 6670ms (Views: 2715.0ms | ActiveRecord: 185.1ms)
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:09:26 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:09:28 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:09:28 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:09:28 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:11:48 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.6ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 104ms (Views: 95.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:11:48 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:11:49 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:12:20 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.3ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 135ms (Views: 131.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:20 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:21 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.3ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:12:22 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.7ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 127ms (Views: 115.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:12:50 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:13:01 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.3ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  Rendered welcome/index.html.erb within layouts/application (76.5ms)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `text' for #<Cat::ActiveRecord_Relation:0x168b3ec>):
+     7: </div>
+     8: 
+     9: <h1>Коты</h1>
+    10: <%= @cat.text %>
+    11: <% @cat.each do |cat| %>
+    12: 	<div><%= cat.name %></div>
+    13: 	<div><%= cat.text %></div>
+  app/views/welcome/index.html.erb:10:in `_app_views_welcome_index_html_erb___294059745_11816280'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (28.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (385.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (263.0ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (562.4ms)
+
+
+Started PUT "/__web_console/repl_sessions/6085e4c98eea5f33bd7c44d9c19467be" for 127.0.0.1 at 2016-05-31 09:13:12 +0400
+
+
+Started PUT "/__web_console/repl_sessions/6085e4c98eea5f33bd7c44d9c19467be" for 127.0.0.1 at 2016-05-31 09:13:14 +0400
+
+
+Started PUT "/__web_console/repl_sessions/6085e4c98eea5f33bd7c44d9c19467be" for 127.0.0.1 at 2016-05-31 09:13:18 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:13:46 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.3ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:13:47 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:14:23 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.3ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 242ms (Views: 239.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:14:24 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:14:49 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.4ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (52.3ms)
+Completed 200 OK in 626ms (Views: 133.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:14:50 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:19:30 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.6ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 136ms (Views: 123.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:19:31 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:20:17 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.7ms)[0m  SELECT "cats".* FROM "cats"
+  Rendered welcome/index.html.erb within layouts/application (53.0ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (undefined local variable or method `cat2' for #<#<Class:0xe60fb4>:0x51dac40>):
+     7: </div>
+     8: 
+     9: <h1>Коты</h1>
+    10: <%= cat2 %>
+    11: <% @cat.each do |cat| %>
+    12: 	<div><%= cat.name %></div>
+    13: 	<div><%= cat.text %></div>
+  app/views/welcome/index.html.erb:10:in `_app_views_welcome_index_html_erb__56942563_42914020'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (207.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (142.1ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (310.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:21:23 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.6ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  Rendered welcome/index.html.erb within layouts/application (38.1ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined local variable or method `cat2' for #<#<Class:0xe6e7b8>:0x520ff80>):
+     7: </div>
+     8: 
+     9: <h1>Коты</h1>
+    10: <%= cat2 %>
+    11: <% @cat.each do |cat| %>
+    12: 	<div><%= cat.name %></div>
+    13: 	<div><%= cat.text %></div>
+  app/views/welcome/index.html.erb:10:in `_app_views_welcome_index_html_erb__56942563_42914020'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.3ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (161.3ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (134.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (299.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:22:36 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.7ms)[0m  SELECT "cats".* FROM "cats"
+  Rendered welcome/index.html.erb within layouts/application (53.7ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined local variable or method `cat2' for #<#<Class:0xed72f4>:0xed5404>):
+     9: <h1>Коты</h1>
+    10: 
+    11: <% @cat.each do |cat| %>
+    12: 	<%= cat2 %>
+    13: 	<div><%= cat.name %></div>
+    14: 	<div><%= cat.text %></div>
+    15: 	<div><%= image_tag cat.picture.url %></div>
+  app/views/welcome/index.html.erb:12:in `block in _app_views_welcome_index_html_erb__56942563_7775550'
+  app/views/welcome/index.html.erb:11:in `_app_views_welcome_index_html_erb__56942563_7775550'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.3ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (160.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (131.0ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (291.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:26:46 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.6ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  Rendered welcome/index.html.erb within layouts/application (53.9ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined local variable or method `myhome' for #<#<Class:0x140a3ac>:0x13e8aa4>):
+     8: 
+     9: <h1>Коты</h1>
+    10: 
+    11: <%= myhome %>
+    12: <% @cat.each do |cat| %>
+    13: 	<div><%= cat.name %></div>
+    14: 	<div><%= cat.text %></div>
+  app/views/welcome/index.html.erb:11:in `_app_views_welcome_index_html_erb__56942563_10426870'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (158.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (131.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (292.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:28:05 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.6ms)[0m  SELECT "cats".* FROM "cats"
+  Rendered welcome/index.html.erb within layouts/application (38.7ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined local variable or method `myhome' for #<#<Class:0x70a5224>:0x517b31c>):
+     8: 
+     9: <h1>Коты</h1>
+    10: 
+    11: <%= myhome %>
+    12: <% @cat.each do |cat| %>
+    13: 	<div><%= cat.name %></div>
+    14: 	<div><%= cat.text %></div>
+  app/views/welcome/index.html.erb:11:in `_app_views_welcome_index_html_erb__56942563_10426870'
+
+
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (160.1ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (131.1ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/gromhs/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (293.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.3ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 69ms (Views: 66.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:29:55 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.3ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:07 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.6ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 87ms (Views: 78.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:18 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:19 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.3ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:20 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.6ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 108ms (Views: 98.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:25 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.3ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 97ms (Views: 92.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:26 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:29 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (1.0ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (48.5ms)
+Completed 200 OK in 121ms (Views: 109.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:30 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.3ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 69ms (Views: 66.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:31 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.3ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:32 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.3ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 98ms (Views: 96.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:33 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.3ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 103ms (Views: 101.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:50 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+Processing by WelcomeController#index as HTML
+  [1m[35mCat Load (0.3ms)[0m  SELECT "cats".* FROM "cats"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 96ms (Views: 94.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:51 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+Processing by WelcomeController#index as HTML
+  [1m[36mCat Load (0.3ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?  [["likeable_type", "Cat"], ["likeable_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "like_likes" WHERE "like_likes"."likeable_type" = ? AND "like_likes"."likeable_id" = ?[0m  [["likeable_type", "Cat"], ["likeable_id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/cats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/cats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
+
+
+Started GET "/assets/kitty404-b97758a6658dfaec822d027e09bafec7239a6b3215f6f35dc6db7bc3be3c7af0.jpg" for 127.0.0.1 at 2016-05-31 09:30:56 +0400
