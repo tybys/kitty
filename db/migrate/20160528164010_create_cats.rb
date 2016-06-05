@@ -13,7 +13,8 @@ class CreateCats < ActiveRecord::Migration
       t.text :text
       t.integer :user_id
       t.attachment :picture
-      t.references :user, index: true, foreign_key: true
+
+      #t.references :user, index: true, foreign_key: true
 
       t.timestamps null: false
     end

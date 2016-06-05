@@ -56,7 +56,12 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  #resources :users
   resources :cats
+
+  # resource :users do
+  #   resource :cats
+  # end
 
   root 'welcome#index'
 

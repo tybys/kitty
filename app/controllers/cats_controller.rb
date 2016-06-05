@@ -1,10 +1,13 @@
 class CatsController < ApplicationController
   def index
     @cat = Cat.all
+
+    @cat2 = Cat.joins(:users)
   end
 
   def show
     @cat = Cat.find(params[:id])
+
   end
 
   def new
@@ -13,7 +16,6 @@ class CatsController < ApplicationController
 
   def create
     @cat = Cat.new(cat_params)
-
     @cat.save
     redirect_to @cat
   end

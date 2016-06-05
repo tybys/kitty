@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Rails kitty: development" uuid="430291f5-0800-4277-81be-3d3f07ea08c2" />
+    <data-source name="Rails kitty: development" uuid="08b1621f-8c49-49e3-954a-7dd81ca24b5b">
+      <auth-required>false</auth-required>
+    </data-source>
   </component>
 </project>
