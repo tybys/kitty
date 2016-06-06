@@ -15,7 +15,38 @@
  */
 
 .cat {
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
+    /*width: 300px;*/
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+}
+
+.debug_dump {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 45px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.top {
+    border-bottom: 1px dashed;
+}
+.top .left {
+    float: left;
+    width: 10%;
+}
+.top .middle {
+    float: left;
+    width: 53.666666%;
+}
+.top .right {
+    float: left;
+    width: 33.333333%;
+}
+.top:after {
+    content: '';
+    display: block;
+    clear: both;
 }

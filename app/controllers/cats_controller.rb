@@ -1,13 +1,17 @@
 class CatsController < ApplicationController
   def index
     @cat = Cat.all
+    #@cat2 = Cat.joins(:users)
 
-    @cat2 = Cat.joins(:users)
+    if params[:search]
+      @catFind = Cat.search(params[:search]).order("created_at DESC")
+    else
+      @catFind = Cat.all.order('created_at DESC')
+    end
   end
 
   def show
     @cat = Cat.find(params[:id])
-
   end
 
   def new

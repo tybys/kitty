@@ -1,11 +1,3 @@
-<div class="auth" style="text-align:right">
-  <% if current_user %>
-      Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-  <% else %>
-      <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-  <% end %>
-</div>
-
 <h1>Коты</h1>
 
 <% @cat.each do |cat| %>
@@ -29,9 +21,9 @@
         <% end %>
       </div>
 
-      <%= cat.user.name %>
-      <%= cat.user.id %>
-      <!--%= #link_to 'Show', cat_path(cat) %-->
+      <a style="display: block" href="<%= user_path(cat.user) %>"><%= cat.user.name %></a>
+      <a style="display: block" href="<%= cat_path(cat) %>">show</a>
+      <!--%= link_to 'Show', cat_path(cat) %-->
       <hr/>
     </div>
 <% end %>

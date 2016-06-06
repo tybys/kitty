@@ -1,29 +1,52 @@
-<h1>Listing articles</h1>
+<h1>Listing cats</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
+<% if @catFind.present? %>
 
-  <% @cat.each do |cat| %>
-    <tr>
-      <td><%= cat.name %></td>
-      <td><%= cat.text %></td>
-      <td><%= image_tag cat.picture.url %></td>
+<% else %>
+  <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
+<% end %>
 
-      <td><%= link_to 'Show', cat_path(cat) %></td>
+<% @catFind.each do |catFind| %>
+  <%= catFind.name %>
+  <%= catFind.text %>
+  <%= image_tag catFind.picture.url %>
+  <%= link_to 'Show', cat_path(catFind) %>
+  <%= Like::Like.with_likeable(catFind).count %>
 
-      <td>
-        <%= Like::Like.with_likeable(cat).count %>
-
-
-        <% if Like::Like.liking?(current_user, cat) %>
-          <%= link_to 'Unlike', like_path_for(cat), method: :delete %>
-        <% else %>
-          <%= link_to 'Like', like_path_for(cat), method: :post %>
-        <% end %>
-      </td>
-    </tr>
+  <% if Like::Like.liking?(current_user, catFind) %>
+    <%= link_to 'Unlike', like_path_for(catFind), method: :delete %>
+  <% else %>
+    <%= link_to 'Like', like_path_for(catFind), method: :post %>
   <% end %>
-</table>
+
+  <a style="display: block" href="<%= user_path(catFind.user) %>"><%= catFind.user.name %></a>
+
+<% end %>
+
+<!--<table>-->
+  <!--<tr>-->
+    <!--<th>Title</th>-->
+    <!--<th>Text</th>-->
+  <!--</tr>-->
+
+  <!--<% @cat.each do |cat| %>-->
+    <!--<tr>-->
+      <!--<td><%= cat.name %></td>-->
+      <!--<td><%= cat.text %></td>-->
+      <!--<td><%= image_tag cat.picture.url %></td>-->
+
+      <!--<td><%= link_to 'Show', cat_path(cat) %></td>-->
+
+      <!--<td>-->
+        <!--<%= Like::Like.with_likeable(cat).count %>-->
+
+
+        <!--<% if Like::Like.liking?(current_user, cat) %>-->
+          <!--<%= link_to 'Unlike', like_path_for(cat), method: :delete %>-->
+        <!--<% else %>-->
+          <!--<%= link_to 'Like', like_path_for(cat), method: :post %>-->
+        <!--<% end %>-->
+      <!--</td>-->
+    <!--</tr>-->
+  <!--<% end %>-->
+<!--</table>-->

@@ -1,19 +1,19 @@
 <p>
-  <strong>Title:</strong>
+  <strong>cat_name:</strong>
   <%= @cat.name%>
 </p>
 
 <p>
-  <strong>Text:</strong>
+  <strong>biography:</strong>
   <%= @cat.text %>
 </p>
 
 <p>
-  <strong>user_id:</strong>
-  <%= @cat.user_id %>
+  <strong>owner_name:</strong>
+  <%= @cat.user.name %>
 </p>
 
 <p>
-  <strong>image:</strong>
+  <strong></strong>
   <%= image_tag @cat.picture.url %>
 </p>
