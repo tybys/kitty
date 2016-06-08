@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -58,6 +59,15 @@ Rails.application.routes.draw do
 
   resources :users
   resources :cats
+#  resources :admins
+
+  namespace :admin do
+    get '', to: 'dashboard#index', as: '/'
+    resource :dashboard do
+      post :edit_multiple
+      put :update_multiple
+    end
+  end
 
   root 'welcome#index'
 
