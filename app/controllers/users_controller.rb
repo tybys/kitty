@@ -1,11 +1,14 @@
 class UsersController < ApplicationController
+  before_filter lambda { @body_class = 'users-page' }
+
   def index
-    #@user = User.find(params[:id])
     @user = User.all
   end
 
   def show
-    @user = User.find(params[:id])
+    #@user = User.find(params[:id])
+    @user = User.find_by_name(params[:id])
+    @users_cats = Cat.all.where('user_id' => @user)
   end
 
   def new

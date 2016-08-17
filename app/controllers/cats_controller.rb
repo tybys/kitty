@@ -1,7 +1,7 @@
 class CatsController < ApplicationController
+  before_filter lambda { @body_class = 'cats-page' }
   def index
     @cat = Cat.all
-    #@cat2 = Cat.joins(:users)
 
     if params[:search]
       @catFind = Cat.search(params[:search]).order("created_at DESC")

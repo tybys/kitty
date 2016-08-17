@@ -1,4 +1,6 @@
-<%= form_tag(cats_path, :method => "get", id: "search-form") do %>
-  <%= text_field_tag :search, params[:search], placeholder: "Search Cats" %>
-  <%= submit_tag "Search" %>
+<%= form_tag(cats_path, :method => "get", id: "search-form", class: "navbar-form navbar-left") do %>
+    <div class="form-group">
+      <%= text_field_tag :search, params[:search], placeholder: "Search Cats", class: "form-control" %>
+    </div>
+  <%= submit_tag "Search", class:'btn btn-default' %>
 <% end %>

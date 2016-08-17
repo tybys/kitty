@@ -1,7 +1,14 @@
-<% provide(:title, @user.name)%>
+<% @title = @user.name %>
+<div class="col-md-12">
+    <%= gravatar_for @user%>
 
-<%= gravatar_for @user%>
+  <%= @user.name %><br/>
 
-<%= @user.name %>
-<%= @user.email %>
-<%= @user.id %>
+  <% @users_cats.each do |usersCat| %>
+      <%= usersCat.name %><br/>
+      <%= usersCat %><br/>
+      <%= userCat.@users_cats.size %>
+      <div><%= image_tag usersCat.picture.url(:thumb) %></div>
+  <% end %>
+
+</div>

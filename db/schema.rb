@@ -25,8 +25,6 @@ ActiveRecord::Schema.define(version: 20160605090940) do
     t.datetime "updated_at",           null: false
   end
 
-  add_index "cats", ["user_id"], name: "index_cats_on_user_id"
-
   create_table "like_likes", force: :cascade do |t|
     t.string   "liker_type",    null: false
     t.integer  "liker_id",      null: false

@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  before_filter lambda { @body_class = 'session-page' }
   def new
   end
 

@@ -45,7 +45,16 @@ group :development do
   gem 'spring'
 end
 
-gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+#gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+
+gem 'execjs', '~> 2.7'
+#gem 'paperclip', '~> 5.0.0'
+gem 'paperclip', '~> 4.2'
 gem 'like', '0.2.1'
 
+#gem 'less-rails-bootstrap', '~> 3.3', '>= 3.3.5.0'
+#gem 'therubyracer'
+gem 'bootstrap', '~> 4.0.0.alpha3.1'
+
 gem 'rails_admin'
+gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
