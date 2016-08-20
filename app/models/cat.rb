@@ -3,14 +3,20 @@ class Cat < ActiveRecord::Base
 
 	def self.search(search)
 		where("name LIKE ?", "%#{search}%")
-		#where("text LIKE ?", "%#{search}%")
 	end
 
-  	has_attached_file :picture,
-                    styles: { medium: "300x300#", thumb: "100x100#" },
-                    #default_url: "/assets/images/kitty404.jpg"
-                    :default_url => ActionController::Base.helpers.asset_path("kitty404.jpg")
+	def self.userList
+		# return self.find_by_sql(
+		# 		"SELECT * FROM 'users' AS u
+		# 		 JOIN 'like_likes' as l ON u.id = l.liker_id
+		# 		 WHERE l.liker_id = ('#{self}')"
+		# )
 
-  	#validates_attachment_content_type :picture, content_type: /\Aimage\/.*\Z/
-		validates_attachment_content_type :picture, :content_type => [ 'image/gif', 'image/png', 'image/x-png', 'image/jpeg', 'image/pjpeg', 'image/jpg' ]
+		where("id = :id")
+	end
+
+	has_attached_file :picture,
+									styles: { medium: "300x300#", thumb: "100x100#" },
+									:default_url => ActionController::Base.helpers.asset_path("kitty404.jpg")
+	validates_attachment_content_type :picture, :content_type => [ 'image/gif', 'image/png', 'image/x-png', 'image/jpeg', 'image/pjpeg', 'image/jpg' ]
 end

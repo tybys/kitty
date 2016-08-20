@@ -22,7 +22,9 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
 
   get '/signup' => 'users#new'
+
   post '/users' => 'users#create'
+  post '/:id/edit' => 'users#update'
 
   mount Like::Engine => '/'
 

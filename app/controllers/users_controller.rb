@@ -5,13 +5,23 @@ class UsersController < ApplicationController
     @user = User.all
   end
 
-  def show
-    #@user = User.find(params[:id])
+  def update
     @user = User.find_by_name(params[:id])
-    @users_cats = Cat.all.where('user_id' => @user)
+    if @user.update_attributes(user_params)
+      redirect_to @user
+    else
+      render 'edit'
+    end
   end
 
-  def new
+  def edit
+    @user = User.find_by_name(params[:id])
+  end
+
+  def show
+    @user = User.find_by_name(params[:id])
+    @users_cats = Cat.all.where('user_id' => @user)
+    @users_cats_count = @users_cats.count
   end
 
   def create
