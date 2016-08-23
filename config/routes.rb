@@ -25,7 +25,8 @@ Rails.application.routes.draw do
 
   post '/users' => 'users#create'
   post '/:id/edit' => 'users#update'
-
+  #post '/create' => 'users#create'
+  post '/signup' => 'users#create'
   mount Like::Engine => '/'
 
   resources :users, :path => ''

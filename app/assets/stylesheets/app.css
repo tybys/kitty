@@ -2,3 +2,7 @@
 .session-page .header {
     display: none;
 }
+
+.users-pageRegistration {
+    background-color: #cccccc;
+}

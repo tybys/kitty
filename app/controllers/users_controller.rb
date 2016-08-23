@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_filter lambda { @body_class = 'users-page' }
+  skip_before_filter :verify_authenticity_token, :only => [:create]
+  before_filter lambda { @body_class = 'users-pageRegistration' }
 
   def index
     @user = User.all
@@ -24,13 +25,19 @@ class UsersController < ApplicationController
     @users_cats_count = @users_cats.count
   end
 
+  def new
+    @user = User.new
+  end
+
   def create
-    user = User.new(user_params)
-    if user.save
+    @user = User.new(user_params)
+
+    if @user.save
       session[:user_id] = user.id
-      redirect_to '/'
+      redirect_to @user
     else
-      redirect_to '/signup'
+      session[:user_id] = nil
+      render 'new'
     end
   end
 
