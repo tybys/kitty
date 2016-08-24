@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   skip_before_filter :verify_authenticity_token, :only => [:create]
   before_filter lambda { @body_class = 'users-pageRegistration' }
+  helper UsersHelper
 
   def index
     @user = User.all

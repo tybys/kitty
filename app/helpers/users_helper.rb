@@ -4,4 +4,16 @@ module UsersHelper
     gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}"
     image_tag(gravatar_url, alt: user.name, class: "gravatar")
   end
+
+  # def validation_field_for(fieldname)
+  #   if @user.errors[":#{fieldname}"]
+  #     @user.errors[":#{fieldname}"].join(' ')
+  #   end
+  # end
+
+  def validation_field_for(fieldname)
+    if @user.errors[fieldname]
+      @user.errors[fieldname].join(' ')
+    end
+  end
 end
