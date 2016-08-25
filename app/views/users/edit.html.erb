@@ -1,7 +1,43 @@
 <% @title = @user.name + ' edit profile' %>
 
-<%= form_for :user do |f| %>
-    Name: <%= f.text_field :name %>
+<div class="col-md-12">
+  <%= form_for :user do |f| %>
+      <div class="form-group">
+        <label>Name</label>
+        <%= f.text_field :name, class: 'form-control' %>
+      </div>
 
-    <%= f.submit "Submit" %>
-<% end %>
+      <div class="form-group">
+        <label>nickname</label>
+        <%= f.text_field :nickname, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <label>website</label>
+        <%= f.text_field :website, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <label>about</label>
+        <%= f.text_area :about, class: 'form-control' %>
+      </div>
+
+      <hr/>
+      <div class="form-group">
+        <label>email</label>
+        <%= f.text_field :email, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <label>phone</label>
+        <%= f.text_field :phone, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <label>sex</label>
+        <%= f.text_field :sex, class: 'form-control' %>
+      </div>
+
+      <%= f.submit "Submit" %>
+  <% end %>
+</div>

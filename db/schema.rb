@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160605090940) do
+ActiveRecord::Schema.define(version: 20160825060903) do
 
   create_table "cats", force: :cascade do |t|
     t.string   "name"
@@ -24,6 +24,16 @@ ActiveRecord::Schema.define(version: 20160605090940) do
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
   end
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "commenter"
+    t.text     "body"
+    t.integer  "cat_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "comments", ["cat_id"], name: "index_comments_on_cat_id"
 
   create_table "like_likes", force: :cascade do |t|
     t.string   "liker_type",    null: false
@@ -45,8 +55,18 @@ ActiveRecord::Schema.define(version: 20160605090940) do
     t.string   "name"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "nickname"
+    t.string   "website"
+    t.text     "about"
+    t.string   "phone"
+    t.string   "sex"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "welcomes", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

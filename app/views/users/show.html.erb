@@ -1,11 +1,16 @@
-<% @title = @user.name %>
+<% @title = "catogramm" %>
 <div class="col-md-12">
-    <%= gravatar_for @user%>
 
+  <%= gravatar_for @user%>
   <%= @user.name %><br/>
-  <div>
-    have <%= @users_cats_count %> cats<br/>
-  </div>
+  <%= @user.nickname %><br/>
+  <%= @user.website %><br/>
+  <%= @user.about %><br/>
+  <%= @user.phone %><br/>
+  <%= @user.sex %><br/>
+
+
+
   <% @users_cats.each do |usersCat| %>
       <%= usersCat.name %><br/>
       <div><%= image_tag usersCat.picture.url(:thumb) %></div>
@@ -17,4 +22,7 @@
     <%#= link_to 'Like', edit_user_path %>
   <% end %>
 
+  <div>
+    have <%= @users_cats_count %> cats<br/>
+  </div>
 </div>

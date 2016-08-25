@@ -2,11 +2,7 @@
   <div class="center-block" style="width: 400px">
     <h1>Signup!</h1>
 
-    <%#= form_for @user, url: '/create' do |f| %>
     <%= form_for :user do |f| %>
-        <%#= debug(@user) %>
-        <%#= render 'shared/error_messages' %>
-        <%#= debug(@user) %>
         <div class="form-group">
           <label>Name:</label>
           <%= f.text_field :name, class: 'form-control' %>

@@ -1,5 +1,6 @@
 class CatsController < ApplicationController
   before_filter lambda { @body_class = 'cats-page' }
+
   def index
     @cat = Cat.all
 
@@ -12,6 +13,8 @@ class CatsController < ApplicationController
 
   def show
     @cat = Cat.find(params[:id])
+    #puts @cat.inspect
+    render partial: 'shared/cat'
   end
 
   def new

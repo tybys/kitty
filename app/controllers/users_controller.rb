@@ -8,7 +8,8 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find_by_name(params[:id])
+    #@user = User.find_by_name(params[:id])
+    @user = User.find(params[:id])
     if @user.update_attributes(user_params)
       redirect_to @user
     else
@@ -17,11 +18,14 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find_by_name(params[:id])
+    Rails.logger.debug("Id: #{params[:id]}")
+    #@user = User.find_by_name(params[:id])
+    @user = User.find(params[:id])
   end
 
   def show
-    @user = User.find_by_name(params[:id])
+    #@user = User.find_by_name(params[:id])
+    @user = User.find(params[:id])
     @users_cats = Cat.all.where('user_id' => @user)
     @users_cats_count = @users_cats.count
   end
@@ -37,13 +41,13 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to @user
     else
-      session[:user_id] = nil
+      #session[:user_id] = nil
       render 'new'
     end
   end
 
   private
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation, :nickname, :website, :about, :phone, :sex)
   end
 end

@@ -14,3 +14,37 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+/*
+ $('#shirt_order').submit(function (e) {
+    var postData = $(this).serializeArray();
+    $.ajax({
+        url: 'welcome/index',
+        type: 'POST',
+        data: postData,
+        success: function () {
+            $('#order_modal').modal('show');
+        }
+    });
+
+     e.preventDefault();
+ });
+ */
+
+$(function () {
+   $('.showCat').on('click', function (e) {
+    var url = $(this).attr('href');
+
+    $.ajax({
+       url: url,
+       type: 'GET',
+       success: function (data) {
+           $('#selCat').modal('show');
+           $('#selCat').find('.modal-body').html(data);
+           debugger
+       }
+    });
+
+    e.preventDefault();
+   });
+});
