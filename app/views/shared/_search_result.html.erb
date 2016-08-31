@@ -1,0 +1,7 @@
+  <% @catFind.each do |catFind| %>
+      <%= catFind.name %>
+      <%= catFind.text %>
+      <%= image_tag catFind.picture.url %>
+      <%= link_to 'Show', cat_path(catFind) %>
+      <%= Like::Like.with_likeable(catFind).count %>
+  <% end %>

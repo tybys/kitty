@@ -58,3 +58,9 @@ gem 'bootstrap', '~> 4.0.0.alpha3.1'
 
 gem 'rails_admin'
 gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
+
+# socialization 1.2.0 https://rubygems.org/gems/socialization
+# Socialization allows any model to Follow and/or Like any other model.
+# This is accomplished through a double polymorphic relationship on the
+# Follow and Like models. But you don't need to know that since all the
+# complexity is hidden from you.

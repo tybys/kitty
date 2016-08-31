@@ -2,9 +2,13 @@ class Cat < ActiveRecord::Base
 	belongs_to :user
   has_many :comments
 
-	def self.search(search)
-		where("name LIKE ?", "%#{search}%")
-	end
+	#def as_json(options={})
+		def self.search(search)
+			where("name LIKE ?", "%#{search}%")
+		end
+	#end
+
+  #http://127.0.0.1:3000/cats?search=12
 
 	def self.userList
 		# return self.find_by_sql(

@@ -2,5 +2,42 @@
     <div class="form-group">
       <%= text_field_tag :search, params[:search], placeholder: "Search Cats", class: "form-control" %>
     </div>
-  <%= submit_tag "Search", class:'btn btn-default' %>
+    <div id="search_result">
+
+    </div>
+  <!--<%= submit_tag "Search", class:'btn btn-default' %>-->
 <% end %>
+<script>
+  $(function () {
+    $('#search').on('keyup', function () {
+      var t = $(this).val();
+      var postData = $(this).serializeArray();
+      $.ajax({
+        url: '/cats',
+        type: 'GET',
+        data: postData,
+        success: function (data) {
+
+          $response=$(data);
+          //$raw = $response.find('#sR').html();
+          debugger
+          //$('#search_result').html($raw)
+        },
+        timeout: 3000
+      });
+    });
+  });
+
+//  $.get('movies.html', function (response) {
+//    var source = $(response);
+//    $('#movies').html(source.find('#action-container').html());
+//  });
+</script>
+
+<div hidden="" id="sR">
+  <% if @catFind.present? %>
+      <%= render 'shared/search_result' %>
+  <% else %>
+      <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
+  <% end %>
+</div>

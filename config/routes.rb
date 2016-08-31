@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   #get 'welcome/index'
+  #root 'welcome#index'
+  root 'cats#index'
 
   #resources :users
-  resources :cats
+  resources :cats do
+    resources :comments
+  end
+
+  resources :welcome do
+    resources :comments
+  end
+
 #  resources :admins
 
   namespace :admin do
@@ -13,8 +22,6 @@ Rails.application.routes.draw do
       put :update_multiple
     end
   end
-
-  root 'welcome#index'
 
   # these routes are for showing users a login form, logging them in, and logging them out.
   get '/login' => 'sessions#new'
@@ -30,4 +37,6 @@ Rails.application.routes.draw do
   mount Like::Engine => '/'
 
   resources :users, :path => ''
+
+
 end

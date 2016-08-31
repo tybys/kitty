@@ -32,16 +32,16 @@
  */
 
 $(function () {
-   $('.showCat').on('click', function (e) {
-    var url = $(this).attr('href');
+   $('.cat').on('click', function (e) {
+    var url = $(this).data('href');
 
     $.ajax({
        url: url,
        type: 'GET',
        success: function (data) {
            $('#selCat').modal('show');
-           $('#selCat').find('.modal-body').html(data);
-           debugger
+           //$('#selCat').find('.modal-body').html(data);
+           //debugger
        }
     });
 

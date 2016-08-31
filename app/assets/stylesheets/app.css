@@ -6,3 +6,30 @@
 .users-pageRegistration {
     background-color: #cccccc;
 }
+
+.modal .cat img {
+    width: 100%;
+}
+
+/*active heart*/
+#like.sel svg .st0{fill:#F37865;} /*red*/
+#like.sel svg .st1{fill:#FFFFFF;} /*white*/
+#like.sel svg .st2{fill:#62355C;} /*purple*/
+
+/*default heart*/
+#like.notsel svg .st0{fill:lightgray;} /*red*/
+#like.notsel svg .st1{fill:#FFFFFF;} /*white*/
+#like.notsel svg .st2{fill:gray;} /*purple*/
+
+#search-form {
+    position: relative;
+}
+#search-form #search_result {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid;
+    width: 100%;
+    z-index: 5;
+}

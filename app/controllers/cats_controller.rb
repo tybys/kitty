@@ -1,11 +1,14 @@
 class CatsController < ApplicationController
   before_filter lambda { @body_class = 'cats-page' }
+  helper ApplicationHelper
+  ActiveRecord::Base.include_root_in_json = true
 
   def index
     @cat = Cat.all
 
     if params[:search]
       @catFind = Cat.search(params[:search]).order("created_at DESC")
+
     else
       @catFind = Cat.all.order('created_at DESC')
     end
@@ -14,6 +17,7 @@ class CatsController < ApplicationController
   def show
     @cat = Cat.find(params[:id])
     #puts @cat.inspect
+    @cur_user = User.find(params[:id])
     render partial: 'shared/cat'
   end
 
